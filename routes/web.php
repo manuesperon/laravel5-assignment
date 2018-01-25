@@ -22,6 +22,7 @@ Route::get('/', function () {
 
 Route::get('/users', "UserController@list");
 Route::get('/users/create', "UserController@create");
+Route::get('/users/delete/{userId}', "UserController@delete");
 Route::get('/users/{userId}', "UserController@show");
 
 Route::post('/add', "UserController@add");

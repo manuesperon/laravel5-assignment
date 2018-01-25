@@ -49,6 +49,12 @@ class UserController extends Controller{
 
 }
 
+public function delete($id) {
+  $user = User::find($id);
+  $user->delete();
+  return redirect('/users');
+}
+
   /*public function getUser($user) {
     $User  = User::all()->where('email', $user);
     return response()->json($User);

@@ -18,6 +18,7 @@
       <th>Phone</th>
       <th>Email</th>
       <th>Created at</th>
+      <th>Delete</th>
     </thead>
 
     <tbody>
@@ -31,7 +32,7 @@
         <td>{{ $user->phone }}</td>
         <td>{{ $user->email }}</td>
         <td>{{ $user->created_at->format('m-d-Y') }}</td>
-        
+        <td><a style="color:red" href="/users/delete/{{$user->id}}">x</a></td>
         </tr>
 
     @endforeach
