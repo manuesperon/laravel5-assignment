@@ -85,7 +85,7 @@
                 <div class="links">
                     <a href="/users">Users</a>
                     <a href="/posts">Posts</a>
-                    <a href="https://github.com/manuesperon/laravel5-assignment">GitHub</a>
+                    <a href="https://github.com/manuesperon/laravel5-assignment" target="_blank">GitHub</a>
                     <a href="mailto:manuelesperon23@gmail.com">Email me</a>
                 </div>
             </div>
