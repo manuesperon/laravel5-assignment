@@ -11,6 +11,21 @@
 |
 */
 
+use Illuminate\Http\Request;
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('common.welcome');
 });
+
+
+// User routes
+
+Route::get('/users', "UserController@list");
+Route::get('/users/create', "UserController@create");
+Route::get('/users/{userId}', "UserController@show");
+
+Route::post('/add', "UserController@add");
+
+// Post route
+
+Route::get('/posts', "PostController@list");
